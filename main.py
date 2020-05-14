@@ -26,10 +26,9 @@ print ("")
 print ("[------Ping Test------]")
 print ("")
 
-hostname = "google.com" #example
+hostname = "google.com"
 response = os.system("ping -c 1 " + hostname)
 
-#and then check the response...
 if response == 0:
   print (hostname, "is up!")
 else:
