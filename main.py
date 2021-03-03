@@ -1,35 +1,37 @@
 import psutil
 import wmi
 import os
+import smtplib
+import socket
+from commands import *
 
-cpu = psutil.cpu_percent()
-vram = psutil.virtual_memory()
+#Willkommensnachricht
+while True:
+    print ("")
+    print ("")
+    print ("")
+    print ("Python Monitoring")
+    print ("")
+    print ("Commands:")
+    print ("")
+    print("-h   -> Zeigt die Commands an")
+    print("-i   -> Zeigt die Infoseite an")
+    print("-p  -> Starte einen Pingtest")
+    print("-r   -> Starte den RAM Test")
+    print("-ra   -> Starte den RAM Test jede 5 Sekunden")
 
-c = wmi.WMI()
-print ("INFO")
-systeminfo = c.Win32_ComputerSystem()[0]
+# Commandsabfrage
 
-Manufacturer = systeminfo.Manufacturer
-Model = systeminfo.Model
-
-print(systeminfo)
-print(Manufacturer)
-print(Model)
-
-
-print ("CPU")
-print(cpu)
-print ("RAM")
-print(vram)
-
-print ("")
-print ("[------Ping Test------]")
-print ("")
-
-hostname = "google.com"
-response = os.system("ping -c 1 " + hostname)
-
-if response == 0:
-  print (hostname, "is up!")
-else:
-  print (hostname, "is down!")
+    commands = input("Command: ")
+    print
+    if commands == "-h":
+        help()
+    elif commands == "-i":
+        info()
+    elif commands == "-p":
+        ping()
+    elif commands == "-r":
+        ram()
+    elif commands == "-ra":
+        os.system("py autorun-ram.py")
+sleep(1)

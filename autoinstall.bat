@@ -1,0 +1,3 @@
+echo Starte den Autoinstaller...
+mkdir logs
+echo Fertig
