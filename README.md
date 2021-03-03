@@ -1,4 +1,4 @@
-# Python Monitoring Projekt
+# Python Monitoring
 
 ### Simples Python-Skript für die Systemüberwachung eines Rechners
 
@@ -38,7 +38,7 @@ Python installieren oder sicherstellen, dass dies installiert ist
 * Den unten stehenden Command ausführen
 
 ```
-wget https://gitlab.com/maltesserver/python_monitoring.git
+wget https://github.com/maltesserver/python_monitoring.git
 ```
 
 In das Directory wechseln und ausführen mit 
@@ -81,5 +81,5 @@ This project is licensed under the `MIT License` - see the [LICENSE.md](LICENSE.
 
 
 
-## Built for ITECH - © Malte & Felix 2020
+## © Malte & Felix 2020
 
