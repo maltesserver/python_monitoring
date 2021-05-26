@@ -62,8 +62,8 @@ py main.py
 
 ## Authoren
 
-* [Malte](https://gitlab.com/Maltesserver)
-* [Felix](https://gitlab.com/Realtox)
+* [Malte](https://github.com/Maltesserver)
+* [Felix](https://github.com/Realtox)
 
 
 ## License
